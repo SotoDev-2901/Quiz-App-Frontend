@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand, Helvetica, Arial;
+}
+
+body{
+  background: #f2f2f2;
+}
+
+.container-QuizzList {
+  width: 90%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 1.5rem .6rem;
+}

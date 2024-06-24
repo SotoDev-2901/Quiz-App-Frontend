@@ -1,0 +1,122 @@
+.QuizzList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  gap: 16px;
+}
+
+.QuizzList-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.QuizzList-header-title {
+  color: #292a3a;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+}
+
+.QuizzList-header-title img {
+  width: 24px;
+  margin-right: 5px;
+}
+
+.QuizzList-header button {
+  padding: .5rem 1rem;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.QuizzList-header button:hover {
+  background-color: #f14c7d;
+}
+
+.card-quizz-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 105px; /* Ajusta este valor al alto de tu imagen */
+  left: 0;
+  right: 0;
+}
+
+.card-quizz-info span {
+  font-size: 14px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 7px;
+  margin-right: 7px;
+  color: #8854c0;
+}
+
+.card-QuizzList {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-QuizzList:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title-QuizzList {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  white-space: normal;
+  font-weight: 300;
+  padding: 15px;
+}
+
+.card-img-QuizzList {
+  width: 100%;
+  height: 120px;
+  transition: transform 0.3s ease-in-out; /* Suaviza la transición del zoom */
+  transform: scale(1.10);
+  clip-path: ellipse(80% 60% at 50% 40%); /* Crea una forma elíptica en la parte inferior */
+}
+
+.card-content-QuizzList {
+  padding: 15px;
+  flex: 1; /* Hace que el contenido crezca para ocupar el espacio disponible */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 968px) {
+  .QuizzList {
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas para pantallas medianas */
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .QuizzList {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas medianas */
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 500px) {
+  .QuizzList {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas pequeñas */
+  }
+}
+
